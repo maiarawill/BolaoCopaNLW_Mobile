@@ -9,6 +9,7 @@ import { PoolHeader } from "../components/PoolHeader";
 import { EmptyMyPoolList } from "../components/EmptyMyPoolList";
 import { Option } from "../components/Option";
 import { Share } from "react-native";
+import { Guesses } from '../components/Guesses'
 
 interface RouteParams {
     id: string;
@@ -85,6 +86,8 @@ export function Details(){
                         />    
 
                     </HStack> 
+
+                    <Guesses poolId={poolDetails.id} code={poolDetails.code}/>
                 </VStack>
                 :   <EmptyMyPoolList code={poolDetails.code}/>  
             }
