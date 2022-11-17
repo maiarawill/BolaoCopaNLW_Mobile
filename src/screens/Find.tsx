@@ -59,9 +59,6 @@ export function Find() {
     }
   };
 
-  // useFocusEffect(useCallback(()=>{
-  //   handleJoinPool();
-  // },[]));
   return (
     <VStack flex={1} bgColor="gray.900">
       <Header title="Buscar por código" showBackButton/>
